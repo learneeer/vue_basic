@@ -13,6 +13,8 @@
 
        {{active}}
 
+       <button @click="activate">Zmien checkbox</button>
+
 
     </div>
 
@@ -31,7 +33,10 @@
         methods:{
             changeText(){
                 this.hello = "Hello Word Again"
-            }
+            },
+            activate(){
+                this.active = true
+            },
         }
     })
 </script>
