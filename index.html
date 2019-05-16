@@ -9,11 +9,14 @@
 <body>
 
     <div id="app">
-       <input type="checkbox" v-model="active">
+       <input type="checkbox" value="Jan" v-model="names"> Jan <br />
+       <input type="checkbox" value="Karol" v-model="names"> Karol <br />
+       <input type="checkbox" value="Sam" v-model="names"> Sam <br />
 
-       {{active}}
+       <br>
+       <br>
 
-
+       {{names}}
     </div>
 
 
@@ -25,7 +28,7 @@
         el: '#app',
         data(){
             return{
-                active: false
+                names: []
             }
         },
         methods:{
